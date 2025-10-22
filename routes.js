@@ -6,7 +6,7 @@ const stringAnalyser = require("./model")
 const {interpretQuery} = require("./ai")
 
 
-router.post("", async (req, res) => {
+router.post("/strings", async (req, res) => {
     try {
         const string = req.body.value
         const cleanedValue = string.trim().toLowerCase()
